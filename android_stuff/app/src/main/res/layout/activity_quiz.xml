@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <TextView
+            android:id="@+id/textPrompt2"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="The most popular?"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popNameView" />
+
+    <TextView
+            android:id="@+id/textPrompt"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="What year was"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/popNameView"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPrompt" />
+
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="130dp"
+            android:text="Button1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPrompt2" />
+
+    <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Question:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+            android:id="@+id/scorePre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <TextView
+            android:id="@+id/qCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/question"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+            android:id="@+id/qScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/scorePre"
+            app:layout_constraintTop_toBottomOf="@+id/question" />
+</androidx.constraintlayout.widget.ConstraintLayout>
